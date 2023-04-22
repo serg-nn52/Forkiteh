@@ -13,7 +13,7 @@ export default {
     BurgerIcon,
     CloseIcon,
   },
-  props: ["isOpen"],
+  props: ['isOpen'],
 };
 </script>
 
@@ -29,9 +29,11 @@ export default {
   @include media-breakpoint-down(lg) {
     display: flex;
   }
-  &:hover {
-    .svg {
-      fill: var(--grey);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      .svg {
+        fill: var(--grey);
+      }
     }
   }
 }

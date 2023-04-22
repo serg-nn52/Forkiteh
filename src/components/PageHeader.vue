@@ -88,8 +88,10 @@ export default {
 .logo {
   fill: var(--white);
   transition: 0.3s;
-  &:hover {
-    fill: var(--grey);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      fill: var(--grey);
+    }
   }
 }
 .search {
