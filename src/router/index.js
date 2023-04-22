@@ -4,7 +4,7 @@ import PageApp from '../view/PageApp.vue';
 import MainPage from '../view/MainPage.vue';
 import { menuPaths } from './paths';
 
-const baseURL = '/forkiteh/';
+const baseURL = '/Forkiteh/';
 
 const routes = [
   {
