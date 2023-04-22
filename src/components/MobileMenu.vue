@@ -21,7 +21,7 @@ export default {
   display: none;
   width: 576px;
   max-width: 100%;
-  min-height: calc(100vh - 45px);
+  min-height: calc(100vh - 90px);
   padding: 8px 15px 24px 8px;
   margin-left: auto;
   background-color: var(--white);

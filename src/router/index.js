@@ -4,11 +4,11 @@ import PageApp from '../view/PageApp.vue';
 import MainPage from '../view/MainPage.vue';
 import { menuPaths } from './paths';
 
-const history = createWebHistory();
+const baseURL = '/forkiteh/';
 
 const routes = [
   {
-    path: '/',
+    path: baseURL,
     component: MainPage,
     name: 'Main',
   },
@@ -46,12 +46,12 @@ const routes = [
     path: '/:pathMatch(.*)*',
     component: Page404,
     name: 'NotFound',
-    title: 'Страница не найдена',
   },
 ];
 
 const router = createRouter({
-  history,
+  history: createWebHistory(),
   routes,
 });
+
 export default router;
