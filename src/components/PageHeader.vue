@@ -14,7 +14,7 @@
       </div>
     </div>
     <DesktopMenu />
-    <MobileMenu @click.stop="isOpen = true" ref="mobileMenu" v-if="isOpen" />
+    <MobileMenu ref="mobileMenu" v-if="isOpen" />
   </header>
 </template>
 
@@ -42,10 +42,16 @@ export default {
       isOpen: false,
     };
   },
-  created() {
-    document.addEventListener('click', () => {
+  methods: {
+    closeMobileMenu() {
       this.isOpen = false;
-    });
+    },
+  },
+  created() {
+    document.addEventListener('click', this.closeMobileMenu);
+  },
+  beforeUnmount() {
+    document.removeEventListener('click', this.closeMobileMenu);
   },
 };
 </script>

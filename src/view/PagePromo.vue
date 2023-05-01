@@ -1,5 +1,5 @@
 <template>
-  <h2 class="title">Любая страница приложения</h2>
+  <h2 class="title">Промотариф Tele2</h2>
 </template>
 
 <script>

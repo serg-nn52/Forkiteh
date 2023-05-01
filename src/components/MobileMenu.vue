@@ -36,18 +36,10 @@ export default {
 .link {
   display: block;
   margin-left: auto;
-  padding: 16px 0 8px 0;
+  padding: 16px 0;
   font-weight: 700;
   font-size: 1.6rem;
   color: var(--mobile-menu);
   border-bottom: 1px var(--mobile-border) solid;
-}
-.router-link-active {
-  color: var(--black);
-  border-bottom: 2px var(--black) solid;
-  padding: 16px 0 7px 0;
-  &:hover {
-    color: var(--black);
-  }
 }
 </style>
